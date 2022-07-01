@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays Testing</title>
+    <script src="array_examples.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="padding: 30px">
+        <h1>This splits alphabet into sets of 3's, and multiplies the first set against it's self and all the others using the dot product</h1>
+        <p id="arrayTest1"></p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var combinatorArray = aFunc()
+      var reg = /,/g
+      var cubedAlphabet = combinatorArray.replace(reg, "\n")
+      document.getElementById("arrayTest1").innerText = cubedAlphabet
+
+
+    </script>
+  </body>
+</html>
